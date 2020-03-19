@@ -2,7 +2,7 @@
 
 ```bash
 # 通过 npm 安装
-npm i vant -S
+npm i zmjd-mobile -S
 ```
 
 ## 快速上手
