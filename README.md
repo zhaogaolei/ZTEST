@@ -16,8 +16,8 @@ Vue.use(Button);
 参考 [cdn地址](https://www.jsdelivr.com/package/npm/zmjd-mobile?path=dist)
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zmjd-mobile@1.0.1/dist/zmjd.min.css">
-<script src="https://cdn.jsdelivr.net/npm/zmjd-mobile@1.0.1/dist/zmjd.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zmjd-mobile/dist/zmjd.min.css">
+<script src="https://cdn.jsdelivr.net/npm/zmjd-mobile/dist/zmjd.min.js"></script>
 ```
 
 
