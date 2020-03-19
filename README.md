@@ -1,3 +1,17 @@
+## 安装
+
+```bash
+# 通过 npm 安装
+npm i vant -S
+```
+
+## 快速上手
+
+```js
+import Vue from 'vue';
+import { Button } from 'zmjd-mobile';
+Vue.use(Button);
+```
 
 ## Project setup
 ```
