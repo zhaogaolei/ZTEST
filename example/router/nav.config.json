@@ -1,0 +1,37 @@
+[
+  {
+    "title":"基础组件",
+    "list":[
+      {
+        "path":"/button",
+        "name":"button",
+        "title":"按钮"
+      },
+      {
+        "path":"/swipe",
+        "name":"swipe",
+        "title":"轮播"
+      },
+      {
+        "path":"/icon",
+        "name":"icon",
+        "title":"图标"
+      },
+      {
+        "path":"/cell",
+        "name":"cell",
+        "title":"单元格"
+      }
+    ]
+  },
+  {
+    "title":"弹窗组件",
+    "list":[
+      {
+        "path":"/toast",
+        "name":"toast",
+        "title":"轻提示"
+      }
+    ]
+  }
+]
