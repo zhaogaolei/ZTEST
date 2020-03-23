@@ -7,15 +7,18 @@ const { VueLoaderPlugin } = require('vue-loader')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserJsPlugin = require('terser-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 console.log(chalk.blue('读取配置...') + '\n')
+
 const distBaseName = 'zmjd'
 function webpackConfig () {
   const pkg = require(path.join(process.cwd(), 'package.json'))
   const entry = path.join(__dirname, '../src/index.js')
   const config = {
     mode: 'production', // 'production', development
-    stats: {
+    stats: // 'errors-only',
+    {
       modules: false, // 隐藏构建模块信息
       children: false // 隐藏children 信息
     },
@@ -85,7 +88,10 @@ function webpackConfig () {
       new VueLoaderPlugin(),
       new MiniCssExtractPlugin({
         filename: '[name].css'
-      })
+      }),
+      new CopyPlugin([
+        { from: path.join(__dirname, '../src'), to: path.join(__dirname, '../es') }
+      ])
     ]
   }
 

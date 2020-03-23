@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+/es
 /example/dist
 /zmjd-mobile/dist
 /zmjd-mobile/stats.json
